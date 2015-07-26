@@ -60,7 +60,7 @@ after_success:
   - ./src/scripts/ci/after_success.sh
 
 notifications:
-  email: botan-commits@lists.randombit.net
+  email: cordney@cordney.com
 
 addons:
   apt:
