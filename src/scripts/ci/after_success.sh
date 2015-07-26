@@ -8,5 +8,5 @@ if [ "$BUILD_MODE" = "coverage" ]; then
    /tmp/usr/bin/lcov --gcov-tool "$GCOV" --remove coverage.info 'tests/*' '/usr/*' --output-file coverage.info
    /tmp/usr/bin/lcov --gcov-tool "$GCOV" --list coverage.info
 
-   bash <(curl -s https://codecov.io/bash)
+   curl -s https://codecov.io/bash | bash
 fi
