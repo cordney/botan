@@ -42,8 +42,8 @@ class DLIES_KAT_Tests : public Text_Based_Test
          Botan::DH_PrivateKey from(Test::rng(), domain, x1);
          Botan::DH_PrivateKey to(Test::rng(), domain, x2);
 
-         const std::string kdf_algo = "KDF2(SHA-1)";
-         const std::string mac_algo = "HMAC(SHA-1)";
+         const std::string kdf_algo = "KDF2(SHA-512)";
+         const std::string mac_algo = "HMAC(SHA-512)";
          const size_t mac_key_len = 16;
 
          Test::Result result("DLIES");
